@@ -49,7 +49,7 @@ body {
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 5rem;
-    width: 7rem;
+    width: 8rem;
     position: absolute;
     top: 7rem;
     left: 25vw;
@@ -103,7 +103,7 @@ body {
 .eraser-tool-cont{
 
     height:2rem;
-    width:7rem;
+    width:8rem;
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
@@ -111,7 +111,7 @@ body {
     align-items: center;
     position: absolute;
     top:7rem;
-    left:35vw;
+    left:34.5vw;
 }
 
 .eraser-tool-cont input{
