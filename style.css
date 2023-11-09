@@ -49,10 +49,11 @@ body {
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 5rem;
-    width: 8rem;
+    width: 7rem;
     position: absolute;
     top: 7rem;
     left: 25vw;
+    border-radius:3px;
 }
 
 .pencil-width-cont {
@@ -97,4 +98,23 @@ body {
 .blue {
 
     background-color: blue;
+}
+
+.eraser-tool-cont{
+
+    height:2rem;
+    width:7rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:7rem;
+    left:35vw;
+}
+
+.eraser-tool-cont input{
+
+    width:80%;
 }
