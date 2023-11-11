@@ -1,5 +1,7 @@
 let optionsCont = document.querySelector('.options-cont');
 let toolsCont = document.querySelector('.tools-cont');
+let pencilToolCont = document.querySelector('.pencil-tool-cont');
+let eraserToolCont = document.querySelector('.eraser-tool-cont');
 
 let optionsFlag = true;
 
@@ -30,4 +32,6 @@ function closeTools() {
     iconEle.classList.add("fa-times");
 
     toolsCont.style.display = "none";
+    pencilToolCont.style.display = "none";
+    eraserToolCont.style.display = "none";
 }
