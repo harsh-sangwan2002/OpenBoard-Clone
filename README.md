@@ -2,7 +2,7 @@
 
 ## Live Website
 
-- [Link]()
+- [Link](https://openboard-clone.up.railway.app/)
 
 A quick guide to my Project ->
 
