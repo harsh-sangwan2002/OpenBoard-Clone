@@ -1,0 +1,24 @@
+{
+  "name": "openboard-clone",
+  "version": "1.0.0",
+  "description": "- [Link]()",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh-sangwan2003/OpenBoard-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harsh-sangwan2003/OpenBoard-Clone/issues"
+  },
+  "homepage": "https://github.com/harsh-sangwan2003/OpenBoard-Clone#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
