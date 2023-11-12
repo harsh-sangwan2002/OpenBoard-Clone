@@ -25,23 +25,29 @@ tool.lineWidth = penWidth;
 canvas.addEventListener("mousedown", e => {
 
     mouseDown = true;
-    beginPath({
+
+    let data = {
+
         x: e.clientX,
         y: e.clientY
-    })
+    }
+    socket.emit("beginPath", data);
 })
 
 canvas.addEventListener("mousemove", e => {
 
     if (mouseDown) {
 
-        drawStroke({
+        let data = {
             x: e.clientX,
             y: e.clientY,
             color: eraserFlag ? eraserColor : penColor,
             width: eraserFlag ? eraserWidth : penWidth
-        })
+        };
+
+        socket.emit("drawStroke", data);
     }
+
 })
 
 canvas.addEventListener("mouseup", e => {
@@ -63,7 +69,7 @@ undo.addEventListener("click", e => {
         undoRedoTracker
     }
 
-    undoRedoCanvas(trackObj);
+    socket.emit("redoUndo", trackObj);
 })
 
 redo.addEventListener("click", e => {
@@ -76,7 +82,7 @@ redo.addEventListener("click", e => {
         undoRedoTracker
     }
 
-    undoRedoCanvas(trackObj);
+    socket.emit("redoUndo", trackObj);
 })
 
 function undoRedoCanvas(trackObj) {
@@ -154,4 +160,19 @@ download.addEventListener("click", e => {
     a.href = url;
     a.download = "board.jpg";
     a.click();
+})
+
+socket.on("beginPath", (data) => {
+
+    beginPath(data);
+})
+
+socket.on("drawStroke", data => {
+
+    drawStroke(data);
+})
+
+socket.io("redoUndo", data => {
+
+    undoRedoCanvas(data);
 })
