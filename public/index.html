@@ -11,6 +11,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"
+        integrity="sha512-zoJXRvW2gC8Z0Xo3lBbao5+AS3g6YWr5ztKqaicua11xHo+AvE1b0lT9ODgrHTmNUxeCw0Ry4BGRYZfXu70weg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let socket = io.connect("http://localhost:3000");
+    </script>
+    <script src="tools.js" defer></script>
+    <script src="canvas.js" defer></script>
 
 </head>
 
@@ -51,15 +59,6 @@
     <canvas>
 
     </canvas>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"
-        integrity="sha512-zoJXRvW2gC8Z0Xo3lBbao5+AS3g6YWr5ztKqaicua11xHo+AvE1b0lT9ODgrHTmNUxeCw0Ry4BGRYZfXu70weg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        let socket = io.connect("http://localhost:3000");
-    </script>
-    <script src="tools.js"></script>
-    <script src="canvas.js"></script>
 
 </body>
 
