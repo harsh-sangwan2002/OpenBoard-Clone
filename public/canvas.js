@@ -172,7 +172,7 @@ socket.on("drawStroke", data => {
     drawStroke(data);
 })
 
-socket.io("redoUndo", data => {
+socket.on("redoUndo", data => {
 
     undoRedoCanvas(data);
 })

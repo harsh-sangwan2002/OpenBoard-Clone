@@ -91,13 +91,15 @@ function createSticky(stickyTemplate) {
 
     let minimize = stickyCont.querySelector(".minimize");
     let remove = stickyCont.querySelector('.remove');
+    console.log(remove);
+    console.log(minimize);
 
     remove.addEventListener("click", e => {
 
         stickyCont.remove();
     })
 
-    minimize.addEventListener("click", e => {
+    minimize.addEventListener("onclick", e => {
 
         let noteCont = stickyCont.querySelector(".note-cont");
         let display = getComputedStyle(noteCont).getPropertyValue("display");

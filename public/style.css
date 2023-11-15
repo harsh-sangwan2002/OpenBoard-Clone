@@ -194,5 +194,15 @@ img{
 
     height:100%;
     width:100%;
-    /* object-fit: cover; */
+    object-fit: cover;
+}
+
+.remove{
+
+    z-index:2;
+}
+
+.minimize{
+
+    z-index: 2;
 }
