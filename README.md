@@ -31,7 +31,7 @@ Please include the following cdn link tags before testing the website
 
 ## Usage
 
-This is an open board clone project.
+Behold, an exquisite replication: the open board clone project, a splendid testament to innovation and collaborative ingenuity in action.
 
 Click on
 
