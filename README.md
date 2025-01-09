@@ -1,9 +1,5 @@
 # Open Board Clone
 
-## Live Website
-
-- [Link](https://openboard-clone.up.railway.app/)
-
 A quick guide to my Project ->
 
 <img src ="/image.webp">
